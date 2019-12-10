@@ -1,0 +1,5 @@
+insert into TabelaDestino (contrato, cpf, nome)
+select contrato, cpf, nome 
+from TabelaFonte 
+where uf = 'SP'
+and rownum <= 100000;

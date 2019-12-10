@@ -1,0 +1,3 @@
+SELECT * FROM v$session WHERE osuser='usuario1';  -- Para obter o SID e o SESSION
+
+alter system kill session '123,4567';  -- Utilizando o 'SID, SESSION' obtidos
