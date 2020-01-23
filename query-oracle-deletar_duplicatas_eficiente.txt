@@ -1,0 +1,6 @@
+delete FROM tabela_1 a
+      WHERE a.ROWID > ANY (SELECT b.ROWID
+                             FROM tabela_1 b
+                            WHERE a.coluna1 = b.coluna1
+                              AND a.coluna2 = b.coluna2
+                              AND a.coluna3 = b.coluna3)
