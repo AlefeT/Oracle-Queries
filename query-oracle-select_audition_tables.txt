@@ -1,0 +1,3 @@
+select * from dba_audit_trail;
+
+select * from USER_AUDIT_TRAIL;
